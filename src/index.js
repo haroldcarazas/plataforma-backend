@@ -5,7 +5,7 @@ import productosRoutes from './routes/productos.routes.js'
 
 const app = express()
 
-app.use('api/productos', productosRoutes)
+app.use('/api/productos', productosRoutes)
 
 connectDB()
   .then(() => app.listen(PORT, () => console.log(`http://localhost:${PORT}`)))
