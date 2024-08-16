@@ -6,5 +6,9 @@ const router = Router()
 
 router.get('/', ProductoController.index)
 router.get('/:id', validateId, ProductoController.find)
+router.post('/', ProductoController.store)
+router.put('/:id', validateId, ProductoController.updatePut)
+router.patch('/:id', validateId, ProductoController.updatePatch)
+router.delete('/:id', validateId, ProductoController.delete)
 
 export default router
