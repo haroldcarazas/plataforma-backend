@@ -1,4 +1,5 @@
-import { Schema, model } from 'mongoose'
+import { Schema, Types, model } from 'mongoose'
+import Curso from './Curso.js'
 
 const usuarioSchema = new Schema({
   nombres: {
@@ -24,6 +25,11 @@ const usuarioSchema = new Schema({
   rol: {
     type: String,
     required: true
+  },
+  curso: {
+    type: Types.ObjectId,
+    required: true,
+    ref: Curso
   }
 })
 
