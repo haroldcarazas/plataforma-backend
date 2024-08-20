@@ -37,8 +37,8 @@ class AuthController {
     res.json({ message: 'Login exitoso', token })
   }
 
-  static async me () {
-
+  static async me (req, res) {
+    res.json({ data: req.user })
   }
 }
 
