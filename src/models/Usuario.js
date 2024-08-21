@@ -26,11 +26,13 @@ const usuarioSchema = new Schema({
     type: String,
     required: true
   },
-  curso: {
-    type: Types.ObjectId,
-    required: true,
-    ref: Curso
-  }
+  cursos: [
+    {
+      type: Types.ObjectId,
+      required: true,
+      ref: Curso
+    }
+  ]
 })
 
 const Usuario = model('Usuario', usuarioSchema)
