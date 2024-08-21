@@ -9,7 +9,7 @@ export const validateJWT = async (req, res, next) => {
 
     const decoded = jwt.verify(authorization, SECRET_KEY)
 
-    const usuario = await Usuario.findById(decoded.id)
+    const usuario = await Usuario.findById(decoded.id).populate('cursos').select('-__v -password')
     if (!usuario) return res.status(403).json({ message: 'El JWT no pertenece a ningún usuario' })
 
     req.user = usuario
