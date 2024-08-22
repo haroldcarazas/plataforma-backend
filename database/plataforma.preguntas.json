@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "66c4d6e8ecc08c430f604c92"
+  },
+  "pregunta": "What is the past of \"play\"?",
+  "tipo": "simple",
+  "respuesta": "played",
+  "puntaje": 10
+},
+{
+  "_id": {
+    "$oid": "66c4d739ecc08c430f604c93"
+  },
+  "pregunta": "What is the past of \"run\"?",
+  "tipo": "multiple",
+  "opciones": [
+    {
+      "opcion": "running",
+      "correcto": false
+    },
+    {
+      "opcion": "ren",
+      "correcto": false
+    },
+    {
+      "opcion": "ran",
+      "correcto": true
+    }
+  ],
+  "puntaje": 20
+},
+{
+  "_id": {
+    "$oid": "66c4d85fecc08c430f604c94"
+  },
+  "pregunta": "Film a video talking about animals.",
+  "tipo": "video",
+  "puntaje": 50
+}]

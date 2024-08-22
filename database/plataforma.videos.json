@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "66c5ef37a664b7d9f1cfd4b8"
+  },
+  "archivo": "mivideo.mp4",
+  "fecha": {
+    "$date": "2024-08-21T00:00:00.000Z"
+  },
+  "usuario": {
+    "$oid": "66c4ce3f0ca956c310a19271"
+  }
+}]

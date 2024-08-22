@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "66c4cdee405a336c86bb2e29"
+  },
+  "nombres": "Jorge",
+  "apellidos": "Sosa Nuñez",
+  "username": "jorge123",
+  "email": "jorge@gmail.com",
+  "password": "$2b$10$5h00OkLA2c3xdgzLxjFb.eKUFeG06/vYeQtSaoixb6MNEiANrrOAu",
+  "rol": "maestro",
+  "__v": 0,
+  "cursos": [
+    {
+      "$oid": "66c4c69decc08c430f604c74"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66c4ce3f0ca956c310a19271"
+  },
+  "nombres": "Juan Esteban",
+  "apellidos": "Perez Martinez",
+  "username": "juan123",
+  "email": "juan@gmail.com",
+  "password": "$2b$10$1EsCJZoQann5oDd0C54YNeyLjOWifoWFrmVlb8Jltw4BU7s0/SJX.",
+  "rol": "alumno",
+  "__v": 0,
+  "cursos": [
+    {
+      "$oid": "66c4c69decc08c430f604c74"
+    }
+  ]
+}]

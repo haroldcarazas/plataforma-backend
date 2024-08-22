@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "66c4d63cecc08c430f604c90"
+  },
+  "curso": {
+    "$oid": "66c4c69decc08c430f604c74"
+  },
+  "calificacionMinima": 75,
+  "duracion": 3600,
+  "preguntas": [
+    {
+      "$oid": "66c4d6e8ecc08c430f604c92"
+    },
+    {
+      "$oid": "66c4d739ecc08c430f604c93"
+    },
+    {
+      "$oid": "66c4d85fecc08c430f604c94"
+    }
+  ]
+}]
