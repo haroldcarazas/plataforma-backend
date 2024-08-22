@@ -20,3 +20,15 @@ export const validateJWT = async (req, res, next) => {
     res.status(403).json({ message: error.message })
   }
 }
+
+export const validateAlumno = async (req, res, next) => {
+  try {
+    if (!req.user) return res.status(500).json({ message: 'Primero se debe validar el JWT' })
+
+    if (req.user.rol === 'alumno') return next()
+
+    res.status(403).json({ message: 'Rol inválido' })
+  } catch (error) {
+    res.status(403).json({ message: error.message })
+  }
+}
