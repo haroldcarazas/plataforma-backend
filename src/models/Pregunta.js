@@ -19,14 +19,8 @@ const preguntaSchema = new Schema({
   },
   opciones: [
     {
-      opcion: {
-        type: String,
-        required: true
-      },
-      correcto: {
-        type: Boolean,
-        required: true
-      }
+      type: String,
+      required: true
     }
   ]
 })
