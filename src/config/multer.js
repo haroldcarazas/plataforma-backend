@@ -12,7 +12,7 @@ const videosStorage = diskStorage({
 
 const videosFilter = (req, file, cb) => {
   const { mimetype } = file
-  const filesAllowed = ['videos/mp4', 'video/mpeg', 'video/webm']
+  const filesAllowed = ['video/mp4', 'video/mpeg', 'video/webm']
 
   if (filesAllowed.includes(mimetype)) {
     return cb(null, true)

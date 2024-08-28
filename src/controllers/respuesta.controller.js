@@ -5,19 +5,19 @@ import Respuesta from '../models/Respuesta.js'
 class RespuestaController {
   static async store (req, res) {
     const { examen, respuestas } = req.body
+    const respuestasIterable = JSON.parse(respuestas)
 
     const examenData = await Examen.findById(examen)
     if (!examenData) return res.status(404).json({ message: 'Examen inválido' })
 
     let puntaje = 0
     const respuestasArray = []
-    for (const r of respuestas) {
+    for (const r of respuestasIterable) {
       const pregunta = await Pregunta.findById(r.pregunta)
       if (pregunta?.respuesta === r.respuestaAlumno) {
         puntaje += pregunta.puntaje
-
-        respuestasArray.push({ pregunta: pregunta._id, respuesta: r.respuestaAlumno })
       }
+      respuestasArray.push({ pregunta: pregunta._id, respuesta: r.respuestaAlumno })
     }
 
     const nuevaRespuesta = await Respuesta.create({
