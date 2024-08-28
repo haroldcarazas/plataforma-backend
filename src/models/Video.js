@@ -8,7 +8,7 @@ const videoSchema = new Schema({
   },
   fecha: {
     type: Date,
-    required: true,
+    required: false,
     default: Date.now
   },
   usuario: {
